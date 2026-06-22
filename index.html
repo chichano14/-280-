@@ -107,19 +107,18 @@ class="bar famima"></div>
 </section>
 <footer>
   <script>
-    (async function(){
+    (async function(){h
       var sid='1qgIdwR07_m1DuxJmuM_CXHbgznNlbCSP0i1dHYiRvCw';
       try{var r=await fetch('https://docs.google.com/spreadsheets/d/'+sid+'/gviz/tq?tqx=out:json&range=A9:I400');
-          var t=await r.text();var d=JSON.parse(t.replace(/^\/*O_o\*\/\ngoogle\.visualization\.Query\.setResponse\(/,'').replace(/\);$/,''));
+          var t=await r.text();var j=t.indexOf('{');var d=JSON.parse(t.substring(j,t.lastIndexOf(')')));
           var m={};d.table.rows.forEach(function(row){var c=row.c?row.c.map(function(x){return x?(x.v!==null&&x.v!==undefined?String(x.v):''):'';}):[]; if(c[0]&&c[0]!=='\u30b3\u30f3\u30d3\u30cb'&&c[2]&&c[8])m[c[2]]=c[8];});
-          document.querySelectorAll('.card').forEach(function(card){var ne=card.querySelector('.name'),ie=card.querySelector('.icon');if(!ne||!ie)return;var u=m[ne.textContent.trim()];if(u){ie.innerHTML='<img src="'+u+'" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px 0 0 12px;" loading="lazy">';ie.style.fontSize='0';ie.style.overflow='hidden';}});
+          dochument.querySelectorAll('.card').forEach(function(card){var ne=card.querySelector('.name'),ie=card.querySelector('.icon');if(!ne||!ie)return;var u=m[ne.textContent.trim()];if(u){ie.innerHTML='<img src="'+u+'" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px 0 0 12px;" loading="lazy">';ie.style.fontSize='0';ie.style.overflow='hidden';}});
          }catch(e){console.error(e);}
       var logos=[{s:'#seven .logo',u:'https://www.sej.co.jp/library/common/rn202304/images/common/img_logo.png'},{s:'#lawson .logo',u:'https://www.lawson.co.jp/common2015/img/logo_lawson.png'},{s:'#famima .logo',u:'https://www.family.co.jp/content/dam/img/logo/sp/logo_fm.png'}];
       logos.forEach(function(l){var e=document.querySelector(l.s);if(e){e.innerHTML='<img src="'+l.u+'" alt="" style="width:68px;height:68px;object-fit:contain;display:block;">';e.style.background='white';e.style.padding='4px';}});
         var navs=[{s:'.nav a.seven',u:'https://www.sej.co.jp/library/common/rn202304/images/common/img_logo.png',n:'\u30bb\u30d6\u30f3-\u30a4\u30ec\u30d6\u30f3'},{s:'.nav a.lawson',u:'https://www.lawson.co.jp/common2015/img/logo_lawson.png',n:'\u30ed\u30fc\u30bd\u30f3'},{s:'.nav a.famima',u:'https://www.family.co.jp/content/dam/img/logo/sp/logo_fm.png',n:'\u30d5\u30a1\u30df\u30ea\u30fc\u30de\u30fc\u30c8'}];
       navs.forEach(function(n){var e=document.querySelector(n.s);if(e){e.innerHTML='<img src="'+n.u+'" alt="" style="height:20px;vertical-align:middle;margin-right:5px;background:white;border-radius:3px;padding:1px;"> '+n.n;}});
     })();
-  </script>
   </script>
   <strong>コンビニ3社 ダイエット商品280選 PFCパーフェクトリスト</strong><br>
   本リストは登録管理栄養士およびコンビニ栄養情報専門ライターの視点から作成されています。<br>
